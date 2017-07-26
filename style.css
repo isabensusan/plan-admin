@@ -1,0 +1,157 @@
+body {
+  font-family: 'Roboto';
+  font-size: 14px;
+  /*padding: 15px;*/
+  box-sizing: border-box;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+.checkbox-materia {
+    /*float: left;*/
+    position: absolute;
+}
+
+.sidebar {
+  padding: 1%;
+  display: block;
+  float: left;
+  width: 12%;
+  background-color: #1c273b;
+  color: white;
+  height: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 2px 5px rgba(0,0,0,.26)
+}
+
+.sidebar img {
+  filter: invert(100%);
+  width: 100%;
+  margin-bottom: 10%;
+  padding-bottom: 15px;
+}
+
+.sidebar h5, .sidebar h3 {
+  margin: 0;
+}
+
+.kpi-wrapper h3 {
+    font-size: 1.8em;
+}
+
+.kpi-wrapper {
+  margin-bottom: 20px;
+}
+
+.correlativa {
+  background-color: red !important;
+}
+
+.materias-container {
+  max-height: 100%;
+  width: 88%;
+  margin-left: 12%;
+  padding: 15px;
+}
+
+#input-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    display: flex;
+    max-height: 100vh;
+
+}
+
+.checkbox-wrapper {
+  width: 130px;
+  height: 80px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  margin: 5px 20px;
+  display: inline-flex;
+  text-align: center;
+  position: relative;
+  padding: 10px;
+
+}
+
+.checkbox-wrapper h4 {
+  width: 100%;
+  align-self: center;
+  font-size: 13px;
+  margin-bottom: 1em;
+}
+
+.checkbox-wrapper p {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  font-size: 13px;
+}
+
+.cursable {
+  color: rgb(3,230,160);
+}
+
+.cursada {
+  text-decoration: line-through;
+  color: gray;
+}
+
+@media (max-width: 500px) {
+  body {
+    overflow: visible;
+  }
+
+  .kpi-wrapper {
+      display: inline-block;
+      margin: 0px 2%;
+    }
+
+  .kpi-wrapper h3{
+    font-size: 1.3em;
+  }
+
+  .sidebar {
+    float: none;
+    width: 100%;
+    height: 10%;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .sidebar img {
+    display: none;
+    position: fixed;
+    z-index: 10;
+  }
+
+  .materias-container {
+    float: none;
+    margin-left: auto;
+    max-height: 100%;
+  }
+
+  #input-container {
+    max-height: 100%;
+    flex-direction: row;
+    max-width: 100vw;
+  }
+
+  .checkbox-wrapper {
+    margin: 1% auto;
+    padding: 1%;
+  }
+}
+
+@media (max-width: 350px) {
+    .sidebar {
+      padding: 3%;
+    }
+
+    .sidebar h5 {
+      font-size: 0.7em;
+    }
+}
